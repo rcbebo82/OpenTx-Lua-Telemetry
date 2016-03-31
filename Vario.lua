@@ -1,5 +1,7 @@
 -- This script is form OpenTx.org
--- i have edited it to work on OpenTX 2.1.x
+-- edited by Benjamin Boy (rcbebo82@googlemail.com)
+-- works now on OpenTX 2.1.x
+-- Version 1
 
 local MAXPOINTS = 92
 local index = 0

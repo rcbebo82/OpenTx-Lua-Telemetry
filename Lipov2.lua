@@ -1,5 +1,5 @@
 -- written by Benjamin Boy (rcbebo82@googlemail.com) on 30.03.2016
--- Version 2
+-- Version 3
 --
 -- This scripts shows up to 12S Lipo cells or if only one lipo sensor is attachted some optional stuff like RSSI, RPM and temperature.
 
@@ -20,20 +20,16 @@ local celminv = 3.46
 local celmaxv = 4.26
 
 -- define your heli gearing here
---local mainrotorgear = 8.5 --model.getGlobalVariable(0, 0)
---local tailrotorgear = 4.5 --model.getGlobalVariable(1, 0)
+-- Define GVARS in any flight mode u use
+local m1 = model.getGlobalVariable(0, 0) -- GVAR1 (Example: 8)
+local m2 = model.getGlobalVariable(1, 0) -- GVAR2 (Example: 5)
+local t1 = model.getGlobalVariable(2, 0) -- GVAR3 (Example: 4)
+local t2 = model.getGlobalVariable(3, 0) -- GVAR4 (Example: 5)
+local mainrotorgear = string.format("%d.%d", m1, m2) -- Ends in 8.5
+local tailrotorgear = string.format("%d.%d", t1, t2) -- Ends in 4.5
 
--- Version 3?
-local m1 = model.getGlobalVariable(0, 0) -- GVAR1
-local m2 = model.getGlobalVariable(1, 0) -- GVAR2
-local t1 = model.getGlobalVariable(2, 0) -- GVAR3
-local t2 = model.getGlobalVariable(3, 0) -- GVAR4
-local mainrotorgear = string.format("%d.%d", m1, m2)
-local tailrotorgear = string.format("%d.%d", t1, t2)
-
-
--- waiting for OpenTX 2.2.X to implement this with global variables, currently only full numbers are supported so you cant set a gearing like 8,5
--- this would be fine for copying the script to other models without changing variables
+-- waiting for OpenTX 2.2.X to implement this with two global variables, currently only full numbers are supported so normally it
+-- would not be possible to use comma seperated gearing like 8.5
 -- mainrotorgear = model.getGlobalVariable(0, 0) -- GV1 mainrotor
 -- tailrotorgear = model.getGlobalVariable(1, 0) -- GV2 tailrotor
 

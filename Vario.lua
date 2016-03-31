@@ -1,3 +1,6 @@
+-- This script is form OpenTx.org
+-- i have edited it to work on OpenTX 2.1.x
+
 local MAXPOINTS = 92
 local index = 0
 local altitudes = {}

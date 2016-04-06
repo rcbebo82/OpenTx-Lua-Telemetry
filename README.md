@@ -16,5 +16,5 @@ On the lowest middle position you see the lowest lipo voltage cell of each senso
 the right one is liposensor2 and the left one liposensor1.
 
 # Vario.lua
-Original script from OpenTX, edited to work on releases after 2.1.7
+Original script from OpenTX, edited to work on releases after 2.1.7.
 Show current altitude, max altitude, altitude in combination with timer. A nice dashboard where you can see how your altitude changes per time.

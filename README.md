@@ -3,7 +3,7 @@ A collection of telemetry scripts i build for OpenTx 2.1.x
 
 feel free to contact me if u have questions: rcbebo82@googlemail.com
 
-Lipo.lua
+# Lipo.lua
 This scripts shows up to 12S Lipo cells or if only one lipo sensor is attachted some optional stuff like RSSI, RPM and temperature.
 
 If you use one lipo sensor cells are displayed on the left side, rpm on the right side. Check the variables mainrotorgear and tailrotorgear to fit it for your use. Temperature is only displayed in the middle if a tmp sensor is present. If you use a Taranis X9D plus you get the rssi on the right side of the display. 

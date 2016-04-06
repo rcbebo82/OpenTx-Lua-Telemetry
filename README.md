@@ -14,3 +14,7 @@ For 12 S you need two FLVS Sensors. Note that you must change the id of one sens
 In the middle you see the voltage of all cells together and the receiver voltage below.
 On the lowest middle position you see the lowest lipo voltage cell of each sensor
 the right one is liposensor2 and the left one liposensor1.
+
+# Vario.lua
+Original script from OpenTX, edited to work on releases after 2.1.7
+Show current altitude, max altitude, altitude in combination with timer. A nice dashboard where you can see how your altitude changes per time.
